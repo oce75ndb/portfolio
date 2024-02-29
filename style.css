@@ -1,0 +1,10 @@
+.banniere {
+    position: relative;
+    min-height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url("../assets/img/banniere.jpg");
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
