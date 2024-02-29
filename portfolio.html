@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oceane Bondon, developpeuse web Avignon</title>
+    <title>Oceane Bondon, développeuse web Avignon</title>
     <meta name="description" content="BTS SIO OPTION SLAM. Télécharger mon CV LinkedIn. À Propos. Je m'appelle Océane BONDON."/>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
         <img class="banniere" src="images/banner.jpg" alt="bannière de présentation" />
         <h1>Océane BONDON<br />Développement Web Avignon</h1>
         <address>
-            <a href="https://maps.app.goo.gl/GtTRckHgsomH7e8U6">IFC Avignon,Parc activités de Courtine, 250 Rue du 12 Régiment de Zouaves, 84000 Avignon</a>
+            <a href="https://maps.app.goo.gl/GtTRckHgsomH7e8U6">IFC Avignon, Parc activités de Courtine, 250 Rue du 12 Régiment de Zouaves, 84000 Avignon</a>
             <br />
             Tel. <a href="tel:+33.645893057">06 45 89 30 57</a>
             <br />
@@ -20,33 +21,54 @@
         <nav>
             <ul>
                 <li>Accueil</li>
-                <li>Formation</li>
-                <li>Expériences</li>
-                <li>Projets</li>
-                <li>Contact</li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="mentionslegales.html">Mentions Légales</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section id="formation">
             <h2>Formation</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse eum facere, praesentium illo nemo in quaerat natus eos ratione sit labore culpa nostrum. Iste cumque perferendis iure ut soluta accusantium.</p>
         </section>
-        <section>
+        <section id="experiences">
             <h2>Expériences</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maiores at sunt aspernatur, dolorum repellat minima unde accusamus enim ut aliquam voluptate odit alias quo nostrum? Assumenda labore eum deleniti.</p>
         </section>
-        <section>
+        <section id="projets">
             <h2>Projets</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa asperiores delectus voluptas. Repudiandae omnis modi ullam vero a quia, quos tempora minima id, itaque voluptates dolores repellendus deleniti quaerat earum.</p>
         </section>
-        <section>
+        <section id="contact">
             <h2>Contact</h2>
-            <p>Tel. 06 45 89 30 57<br />E-mail : oceanebondon30@gmail.com</p>
+            <form action="envoi.php">
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom" required><br>
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom" required><br>
+                <label for="email">E-mail :</label>
+                <input type="email" name="email" id="email" required><br>
+                <label for="tel">Téléphone :</label>
+                <input type="tel" name="tel" id="tel"><br>
+                <input type="submit" value="Envoyer">
+            </form>
         </section>
+        <br />
     </main>
     <footer>
-        <p>Copyright</p>
+        <br />
+        Copyright &copy; 2024, BONDON Océane
+        <ul>
+            <li>Accueil</li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#experiences">Expériences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="mentionslegales.html">Mentions Légales</a></li>
+        </ul>
     </footer>    
 </body>
 </html>

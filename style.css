@@ -1,5 +1,46 @@
+/* Styles généraux */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #7C6BA1; /* Couleur de texte par défaut */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centrer horizontalement et verticalement le contenu */
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: #F2A9A0;
+}
+
+/* Styles des éléments spécifiques */
+.banniere {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 h2 {
-    text-decoration: underline;
+    text-decoration: underline; /* Soulignement pour les titres h2 */
+    color: #7C6BA1; /* Couleur des titres h2 */
     font-size: 28px;
+}
+
+a {
     text-decoration: none;
+    color: #7C6BA1 /* Couleur des liens */
+}
+
+header {
+     /* Couleur du texte dans l'en-tête */
+}
+
+/* Effet de contour pour les lettres */
+.entoure-lettres {
+    -webkit-text-stroke: 0.5px #7C6BA1; /* Contour autour des lettres */
+    font-size: 20px;
 }
