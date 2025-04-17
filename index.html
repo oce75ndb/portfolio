@@ -575,6 +575,12 @@
             </div>
         </footer>
 
+        <!-- Fenêtre modale cachée au départ -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-btn" onclick="closeLightbox()">← Retour</span>
+            <img id="lightbox-img" src="" alt="Image en grand">
+        </div>  
+
         <script>
 
             document.querySelector('#formulaire').addEventListener('submit', function(event) {
@@ -607,6 +613,26 @@
 
                 // Réinitialisation du formulaire
                 document.querySelector('#formulaire').reset();
+            });
+
+            // Fonction pour ouvrir la lightbox avec l'image cliquée
+            function openLightbox(src) {
+                document.getElementById("lightbox-img").src = src;
+                document.getElementById("lightbox").style.display = "flex";
+            }
+
+            // Fonction pour fermer la lightbox
+            function closeLightbox() {
+                document.getElementById("lightbox").style.display = "none";
+                document.getElementById("lightbox-img").src = "";
+            }
+
+            // On détecte tous les liens vers des images
+            document.querySelectorAll('.work-img img').forEach(img => {
+                img.addEventListener('click', function (e) {
+                e.preventDefault(); // empêche l’ouverture par défaut
+                openLightbox(this.src);
+                });
             });
         </script>
     </body>
