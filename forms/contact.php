@@ -13,9 +13,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fullMessage = "Message de : $name\n\n$message";
 
     if(mail($to, "Nouveau message de votre portfolio", $fullMessage, $headers)) {
-        echo '<p style="text-align:center;color:green;">Votre message a bien été envoyé !</p>';
+        echo '{"message": "Votre message a bien été envoyé !"}';
     } else {
-        echo '<p style="text-align:center;color:red;">Une erreur s\'est produite. Veuillez réessayer.</p>';
+        echo '{"message": "Une erreur s\'est produite. Veuillez réessayer."}';
     }
 }
 ?>
