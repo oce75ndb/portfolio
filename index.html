@@ -614,7 +614,8 @@
                         'Accept': 'application/json',
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({ name, email, message })
+                    body: new FormData(document.querySelector('#formulaire')),
+                    // body: JSON.stringify({ name, email, message })/
                 
                 }).then(response => {
                     if (response.ok) {
