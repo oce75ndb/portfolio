@@ -604,29 +604,6 @@
                 }).catch(error => {
                     console.error('Erreur:', error);
                 });
-                return false; // Empêche le rechargement de la page
-
-                // Envoi des données au serveur
-                fetch('forms/contact.php', {
-                    method: 'POST',
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    body: new FormData(document.querySelector('#formulaire')),
-                    // body: JSON.stringify({ name, email, message })/
-                
-                }).then(response => {
-                    if (response.ok) {
-                        return response.json();
-                    }
-                    throw new Error('Erreur lors de l\'envoi du message');
-                }).then(data => {
-                    // Affichage d'une alerte de confirmation
-                    alert(`Merci ${name} ! Votre message a été envoyé avec succès.`);
-                }).catch(error => {
-                    console.error('Erreur:', error);
-                });
 
                 // Réinitialisation du formulaire
                 document.querySelector('#formulaire').reset();
