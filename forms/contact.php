@@ -13,9 +13,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fullMessage = "Message de : $name\n\n$message";
 
     if(mail($to, "Nouveau message de votre portfolio", $fullMessage, $headers)) {
-        echo '{"message": "Votre message a bien été envoyé !"}';
+        $message = 'Votre message a bien été envoyé !';
+        echo json_encode(["message" => $message]);
+        //echo '{"message": "Votre message a bien été envoyé !"}';
     } else {
-        echo '{"message": "Une erreur s\'est produite. Veuillez réessayer."}';
+        $message = 'Une erreur s\'est produite. Veuillez réessayer.';
+        echo json_encode(["message" => $message]);
+        //echo '{"message": "Une erreur s\'est produite. Veuillez réessayer."}';
     }
 }
 ?>
