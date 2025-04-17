@@ -94,7 +94,7 @@ footer p {
     z-index: 9999;
     top: 0; left: 0;
     width: 100vw; height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(251, 228, 232, 0.85);
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -107,6 +107,9 @@ footer p {
   }
   
   .close-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     background-color: #FFB6C1;
     color: white;
     font-size: 16px;
@@ -117,11 +120,13 @@ footer p {
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease, transform 0.2s ease;
+    z-index: 10000;
   }
   
   .close-btn:hover {
     background-color: #f48ca7;
     transform: scale(1.05);
   }
+  
   
   
