@@ -758,48 +758,58 @@
 <img id="lightbox-img" src="" alt="Image en grand">
 </div>
 <script>
+
 	document.querySelector('#formulaire').addEventListener('submit', function(event) {
-		event.preventDefault();
-		 // Empêche le rechargement de la page// Récupération des valeurs du formulaireconst name = document.querySelector('#name').value;
+		event.preventDefault(); // Empêche le rechargement de la page
+
+		// Récupération des valeurs du formulaire
+		const name = document.querySelector('#name').value;
 		const email = document.querySelector('#email').value;
 		const message = document.querySelector('#message').value;
-		// alert(`Nom: ${
-			name
-		}
-		, Email: ${
-			email
-		}
-		, Message: ${
-			message
-		}
-		`);
+
+		// alert(`Nom: ${name}, Email: ${email}, Message: ${message}`);
 		fetch('forms/contact.php', {
-			method: 'POST',headers: {
-				'Accept': 'application/json','Content-Type': 'application/json'
-			}
-			,
-		}
-		).then(response => {
-			// Vérification de la réponse du serveurif (response.ok) {
+			method: 'POST',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+			},                    
+		}).then(response => {
+			// Vérification de la réponse du serveur
+			if (response.ok) {
 				return response.json();
 			}
 			throw new Error('Erreur lors de l\'envoi du message');
-		}
-		).then(data => {
-			// Affichage d'une alerte de confirmationalert(data.message);}).catch(error => {console.error('Erreur:', error);});// Réinitialisation du formulairedocument.querySelector('#formulaire').reset();});// Fonction pour ouvrir la lightbox avec l'image cliquéefunction openLightbox(src) {
-				document.getElementById("lightbox-img").src = src;
-				document.getElementById("lightbox").style.display = "flex";
-			}
-			// Fonction pour fermer la lightboxfunction closeLightbox() {
-				document.getElementById("lightbox").style.display = "none";
-				document.getElementById("lightbox-img").src = "";
-			}
-			// On détecte tous les liens vers des imagesdocument.querySelectorAll('.work-img img').forEach(img => {
-				img.addEventListener('click', function (e) {
-					e.preventDefault();
-					 // empêche l’ouverture par défautopenLightbox(this.src);
-				});
-			});
+		}).then(data => {
+			// Affichage d'une alerte de confirmation
+			alert(data.message);
+		}).catch(error => {
+			console.error('Erreur:', error);
+		});
+
+		// Réinitialisation du formulaire
+		document.querySelector('#formulaire').reset();
+	});
+
+	// Fonction pour ouvrir la lightbox avec l'image cliquée
+	function openLightbox(src) {
+		document.getElementById("lightbox-img").src = src;
+		document.getElementById("lightbox").style.display = "flex";
+	}
+
+	// Fonction pour fermer la lightbox
+	function closeLightbox() {
+		document.getElementById("lightbox").style.display = "none";
+		document.getElementById("lightbox-img").src = "";
+	}
+
+	// On détecte tous les liens vers des images
+	document.querySelectorAll('.work-img img').forEach(img => {
+		img.addEventListener('click', function (e) {
+		e.preventDefault(); // empêche l’ouverture par défaut
+		openLightbox(this.src);
+		});
+	});
 </script>
 </body>
 </html>
