@@ -150,4 +150,9 @@ a#syntheseE5 {
     justify-content: center;
     margin: 40px 0;
 }
+
+.dropdown a {
+    min-width: 200px;
+    text-align: center;
+  }
   
