@@ -18,11 +18,11 @@
 }
 
 .work p a, .work p a:visited {
-    color: var(--lBlue);
+    color: var(--lPink);
 }
 
 .work p a:hover {
-    color: var(--dBlue);
+    color: var(--dPink);
 }
 
 a#syntheseE5 {
@@ -75,11 +75,11 @@ a#syntheseE5 {
 
 .acc-btn.is-open:before {
     transform: rotate(90deg);
-    color: var(--lBlue);
+    color: var(--lPink);
 }
 
 .acc-btn.is-open {
-    color: var(--lBlue);
+    color: var(--lPink);
     border-bottom: 1px solid #fff;
 }
 
