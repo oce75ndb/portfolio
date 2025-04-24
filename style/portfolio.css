@@ -30,17 +30,17 @@
 }
 
 .work-content .w-more .w-ctegory {
-  color: #0078ff;
+  color: var(--dPink);
 }
 
 .work-content .w-like {
   font-size: 2.5rem;
-  color: #0078ff;
+  color: var(--dPink);
   float: right;
 }
 
 .work-content .w-like a {
-  color: #0078ff;
+  color: var(--dPink);
 }
 
 .work-content .w-like .num-like {
@@ -72,11 +72,11 @@
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #0078ff;
+  border: 1px solid var(--dPink);
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0078ff;
+  background-color: var(--dPink);
 }
 
 .portfolio-details .portfolio-info {
@@ -119,4 +119,40 @@
 .formationInfo {
   color: #fff;
   font-size:large;
+}
+
+section.veille {
+	background-color: var(--lPink);
+	padding: 60px 20px;
+	color: #222;
+}
+
+.veille .heading h2 {
+	color: var(--dPink);
+	text-align: center;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.veille-container {
+	background: white;
+	border-radius: 16px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	padding: 30px 40px;
+	max-width: 900px;
+	margin: 0 auto;
+	font-size: 1rem;
+	line-height: 1.7;
+}
+
+.veille-container h3 {
+	color: var(--dPink);
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-size: 1.2rem;
+}
+
+.veille-container p {
+	margin-bottom: 16px;
+	text-align: justify;
 }

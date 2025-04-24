@@ -1,5 +1,5 @@
 .work {
-    background: #FFB6C1;
+    background: var(--dPink);
 
 }
 
@@ -18,7 +18,7 @@
 }
 
 .work p a, .work p a:visited {
-    color: var(--lPink);
+    color: var(--dPink);
 }
 
 .work p a:hover {

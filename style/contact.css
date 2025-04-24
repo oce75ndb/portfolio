@@ -1,5 +1,5 @@
 .contactForm {
-    background: #FFB6C1;
+    background: var(--dPink);
     font-size: smaller;
 }
 
@@ -38,7 +38,7 @@
     padding: 15px;
     font-size: 16px;
     border: none;
-    background: #fbe4e8;
+    background: var(--lPink);
     color: #fff;
     width: 100%;
 }
@@ -54,7 +54,7 @@
 
 .formBx form input[type="submit"] {
     max-width: 150px;
-    background-color:#fbe4e8;
+    background-color:var(--lPink);
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -92,7 +92,7 @@
 
 .contactInfoBx .box .text h3 {
     font-weight: 500;
-    color: #fbe4e8;
+    color: var(--lPink);
     margin-bottom: 0;
 }
 

@@ -40,7 +40,7 @@
     }
 
     header ul li a {
-        color: #FFB6C1;
+        color: var(--dPink);
         font-size: 24px;
         margin: 10px;
     }
