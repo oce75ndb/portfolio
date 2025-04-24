@@ -128,5 +128,29 @@ footer p {
     transform: scale(1.05);
   }
   
-  
-  
+  .photoBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.photoBx img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #FFB6C1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .profil-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .textBx {
+        text-align: left;
+    }
+}
