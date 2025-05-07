@@ -1,6 +1,5 @@
 .work {
     background: var(--dPink);
-
 }
 
 .heading.white {
@@ -90,7 +89,6 @@ a#syntheseE5 {
     border-bottom: 1px solid #fff;
     transition: max-height 0.3s ease-in-out;
     display: none;
-    
 }
 
 .acc-content p {
@@ -143,8 +141,8 @@ a#syntheseE5 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }  
-  
+}  
+
 .dropdown-wrapper {
     display: flex;
     justify-content: center;
@@ -154,5 +152,35 @@ a#syntheseE5 {
 .dropdown a {
     min-width: 200px;
     text-align: center;
-  }
-  
+}
+
+/* Style ajusté pour chaque projet */
+.work-content {
+    background-color: transparent;
+    border: none;
+    padding: 0.2rem 0;
+    margin: 1rem 0;
+    box-shadow: none;
+    text-align: left;
+    max-width: none;
+}
+
+.work-content .w-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.work-content .w-more {
+    font-size: 0.75rem;
+    color: #ccc;
+    margin-bottom: 0.5rem;
+}
+
+.work-box {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    overflow: hidden;
+}

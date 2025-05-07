@@ -4,7 +4,6 @@
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: #fff;
 }
 
 .work-box:hover img {
@@ -30,7 +29,7 @@
 }
 
 .work-content .w-more .w-ctegory {
-  color: var(--dPink);
+  color: var(--lPink);
 }
 
 .work-content .w-like {
