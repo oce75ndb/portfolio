@@ -154,3 +154,11 @@ footer p {
         text-align: left;
     }
 }
+
+/* Animation douce au survol des boutons */
+.btn, .dropdown a, .acc-btn, button[type=submit] {
+	transition: transform 0.3s ease;
+}
+.btn:hover, .dropdown a:hover, .acc-btn:hover, button[type=submit]:hover {
+	transform: scale(1.05);
+}
