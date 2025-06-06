@@ -35,7 +35,7 @@ header .logo .name {
 }
 
 header.sticky .logo .name {
-    color: #FFB6C1;
+    color: var(--dPink);
     opacity: 1;
 }
 
@@ -50,18 +50,18 @@ header .logo .socials a svg {
 }
 
 header .logo .socials a:hover svg {
-    fill: #FFB6C1;
+    fill: var(--dPink);
     background-color: #fff;
     border-radius: 50%;
 }
 
 header.sticky .logo .socials a svg {
-    fill: #FFB6C1;
+    fill: var(--dPink);
 }
 
 header.sticky .logo .socials a:hover svg {
     fill: #fff;
-    background-color: #FFB6C1;
+    background-color: var(--dPink);
     border-radius: 50%;
 }
 
@@ -84,22 +84,22 @@ header ul li a {
 }
 
 header.sticky ul li a {
-    color: #FFB6C1;
+    color: var(--dPink);
 }
 
 header ul#menu li.active a::after,
 header ul#menu li.active a::before {
     width: 100%;
-    background: #FFB6C1; 
-    color: #FFB6C1;
+    background: var(--lPink); 
+    color: var(--dPink);
 } 
 
 header ul#menu li.active{
-    color:#FFB6C1;
+    color:var(--dPink);
 }
 
 header ul li a:hover {
-    color: #FFB6C1;
+    color: var(--lPink);
     transition: 0.5s;
 }
 
@@ -117,8 +117,8 @@ header ul li a:before {
 header ul li a:hover:after,
 header ul li a:focus:after {
   width: 100%;
-  background: #FFB6C1; 
-  color: #FFB6C1;
+  background: var(--dPink); 
+  color: var(--dPink);
 }
 
 #hamburger {
@@ -126,7 +126,7 @@ header ul li a:focus:after {
 }
   
 #hamburger .bar:nth-child(2) {
-    background-color: #FFB6C1;
+    background-color: var(--dPink);
 }
 
 .bar {

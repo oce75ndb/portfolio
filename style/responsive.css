@@ -60,12 +60,12 @@
     
     #hamburger.active .bar:nth-child(1) {
         transform: translateY(10px) rotate(45deg);
-        background-color: var(--dPink);
+        background-color: var(--lPink);
     }
     
     #hamburger.active .bar:nth-child(3) {
         transform: translateY(-10px) rotate(-45deg);
-        background-color: var(--dPink);
+        background-color: var(--lPink);
     }
 
     section {

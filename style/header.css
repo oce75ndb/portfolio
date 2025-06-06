@@ -33,7 +33,7 @@
 
 .btn {
     position: relative;
-    background-color:lightpink;
+    background-color:var(--lPink);;
     display: inline-block;
     color: #000;
     margin-top: 20px;

@@ -38,7 +38,7 @@
     padding: 15px;
     font-size: 16px;
     border: none;
-    background: var(--lPink);
+    background: #fff;
     color: #fff;
     width: 100%;
 }
@@ -54,7 +54,7 @@
 
 .formBx form input[type="submit"] {
     max-width: 150px;
-    background-color:var(--lPink);
+    background-color: #fff;
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -92,7 +92,7 @@
 
 .contactInfoBx .box .text h3 {
     font-weight: 500;
-    color: var(--lPink);
+    color: #fff;
     margin-bottom: 0;
 }
 

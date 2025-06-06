@@ -44,7 +44,10 @@ a#syntheseE5 {
     margin: 40px 0;
 }
 
-.work .acc-btn, 
+.work .acc-btn{
+    color: var(--lPink);
+}
+
 .work .acc-content {
     color: #fff;
 }
@@ -66,7 +69,7 @@ a#syntheseE5 {
 
 .acc-btn:before {
     content: "\27A4";
-    color: #fff;
+    color: var(--lPink);
     margin: 0 20px;
     float: left;
     transition: all 0.3s linear;

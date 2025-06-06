@@ -34,19 +34,19 @@
 }
 
 .card:nth-child(6n+1), .card:nth-child(6n+1):before{
-    background: #ff4f98;
+    background: #FAD9E0;
 }
 .card:nth-child(6n+2), .card:nth-child(6n+2):before{
-    background: #f9ff80;
+    background: #B33753;
 }
 .card:nth-child(6n+3), .card:nth-child(6n+3):before{
-    background: #ffcd82;
+    background: #8E0F30;
 }
 .card:nth-child(6n+4), .card:nth-child(6n+4):before{
-    background: #ff4f98;
+    background: #66061F;
 }
 .card:nth-child(6n+5), .card:nth-child(6n+5):before{
-    background: #ae68dae1;
+    background: #B33753;
 }
 
 @media (min-width: 991px) {
